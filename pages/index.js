@@ -12,7 +12,7 @@ export default function Home() {
             <p>I'm Justian Spijkerbosch. An 18 year old fullstack developer from the Netherlands,<br />i'm well known with a lot of programming technologies, like Next.JS and NestJS.</p>
             <div>
               <Link href={"/about"}>
-                <button class={"button primary mt-4"}>
+                <button className="button primary mt-4">
                   More about me
                 </button>
               </Link>
@@ -63,6 +63,55 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* projects */}
+        <div className="max-w-7xl mx-auto px-4 xl:px-0 pt-16 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* solo project
+          TODO: MAP OVER ALL PROJECTS USING FRONTMATTER */}
+          <div className="grid-col-1 flex flex-col gap">
+            <h2>Projects</h2>
+            <p>This is a short overview of the last three projects I worked on.</p>
+            <div>
+              <Link href={"/projects"}>
+                <button className="button primary mt-3">
+                  My projects
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="grid-col-1 rounded-lg" style={{backgroundImage: "url(https://media-cdn.tripadvisor.com/media/photo-p/14/06/a3/3d/photo0jpg.jpg)", backgroundSize: 'cover'}}>
+            <div className="p-8 bg-gray-900 rounded-lg">
+              <h3 className="text-white">Starbucks</h3>
+              <p className="text-white">Project for starbucks. I created their API. Created this project using NextJS and NestJS. And did it with someone else.</p>
+              <p className="text-white pt-4">
+                <Link href={"/projects/slug"}>
+                  Read more
+                </Link>
+              </p>
+            </div>
+          </div>
+          <div className="grid-col-1 rounded-lg" style={{backgroundImage: "url(https://media-cdn.tripadvisor.com/media/photo-p/14/06/a3/3d/photo0jpg.jpg)", backgroundSize: 'cover'}}>
+            <div className="p-8 bg-gray-900 rounded-lg">
+              <h3 className="text-white">Starbucks</h3>
+              <p className="text-white">Project for starbucks. I created their API. Created this project using NextJS and NestJS. And did it with someone else.</p>
+              <p className="text-white pt-4">
+                <Link href={"/projects/slug"}>
+                  Read more
+                </Link>
+              </p>
+            </div>
+          </div>
+          <div className="grid-col-1 rounded-lg" style={{backgroundImage: "url(https://media-cdn.tripadvisor.com/media/photo-p/14/06/a3/3d/photo0jpg.jpg)", backgroundSize: 'cover'}}>
+            <div className="p-8 bg-gray-900 rounded-lg">
+              <h3 className="text-white">Starbucks</h3>
+              <p className="text-white">Project for starbucks. I created their API. Created this project using NextJS and NestJS. And did it with someone else.</p>
+              <p className="text-white pt-4">
+                <Link href={"/projects/slug"}>
+                  Read more
+                </Link>
+              </p>
             </div>
           </div>
         </div>
