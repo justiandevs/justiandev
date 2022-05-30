@@ -1,3 +1,33 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Rajdhani&display=swap');
+
+/* tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-lg;
+    font-family: 'Rajdhani', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply text-blue-900;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+}
+
+{/* navigation classes (link, nav, button) */}
+.button {
+    @apply bg-yellow-500 px-5 py-3 rounded-lg transition duration-200 hover:bg-yellow-400 active:bg-yellow-400 focus:bg-yellow-400;
+}
+
+.link {
+    @apply transition duration-200 hover:text-blue-900 active:text-blue-900 focus:text-blue-900;
+}
+
+#nav {
+    transition: background 0.2s ease,
+                padding 0.1s linear;
+}
