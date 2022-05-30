@@ -5,7 +5,7 @@ import Link from "next/link";
 export function NavigationView({ yOffset }) {
     return (
         <nav className={`py-6 fixed left-0 right-0 ${yOffset > 40 ? ('bg-white shadow-sm py-4 md:py-2') : ('py-6')}`} id="nav">
-            <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center max-w-7xl mx-auto px-4 lg:px-0">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center max-w-7xl mx-auto px-4 xl:px-0">
                 {/* left part of navigation */}
                 <Link href={"/"}>
                     <div className={`w-12 cursor-pointer ${yOffset > 40 ? ('hidden md:flex') : ('flex')}`}>
@@ -26,7 +26,7 @@ export function NavigationView({ yOffset }) {
                     </div>
                     <div className={"hidden md:flex"}>
                         <Link href={"/contact"}>
-                            <button className="button">
+                            <button className="button primary">
                                 Contact
                             </button>
                         </Link>

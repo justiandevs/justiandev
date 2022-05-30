@@ -1,5 +1,5 @@
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Rajdhani:wght@400;500;700&display=swap');
 
 /* tailwind */
 @tailwind base;
@@ -7,20 +7,33 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-100 text-lg;
+    @apply bg-gray-50 text-lg;
     font-family: 'Rajdhani', sans-serif;
     scroll-behavior: smooth;
 }
 
+{/* fonts */}
 h1, h2, h3, h4, h5, h6 {
     @apply text-blue-900;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 700;
 }
 
+h2 {
+    @apply text-5xl;
+}
+
 {/* navigation classes (link, nav, button) */}
 .button {
-    @apply bg-yellow-500 px-5 py-3 rounded-lg transition duration-200 hover:bg-yellow-400 active:bg-yellow-400 focus:bg-yellow-400;
+    @apply px-5 py-3 rounded-lg transition duration-200;
+}
+
+.primary {
+    @apply bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-400 focus:bg-yellow-400;
+}
+
+.secondary {
+    @apply bg-blue-900 text-white hover:bg-blue-800 active:bg-blue-800 focus:bg-blue-800;
 }
 
 .link {
