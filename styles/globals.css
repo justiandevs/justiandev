@@ -19,8 +19,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+h1 {
+    @apply text-6xl;
+    line-height: 4.25rem;
+}
+
 h2 {
-    @apply text-5xl;
+    @apply text-4xl;
 }
 
 {/* navigation classes (link, nav, button) */}
