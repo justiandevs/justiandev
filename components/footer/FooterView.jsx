@@ -5,7 +5,7 @@ export function FooterView() {
     return (
         <footer className={"max-w-7xl mx-auto px-4 xl:px-0 pb-16"}>
             {/* get in contact part of footer */}
-            <div className="bg-blue-50 p-8 mb-16 rounded-lg flex flex-col lg:flex-row justify-between gap-3 lg:gap-0 lg:items-center">
+            <div className="bg-blue-50 md:p-12 p-8 mb-16 rounded-lg flex flex-col lg:flex-row justify-between gap-3 lg:gap-0 lg:items-center">
                 <div className="flex flex-col gap-1">
                     <h2>Interested in work <span className="text-yellow-500">from me?</span></h2>
                     <p>I am available at the moment, so maybe I can help you with your new project.</p>
