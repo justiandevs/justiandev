@@ -9,7 +9,7 @@ export default function Home() {
           {/* first part */}
           <div className="flex flex-col gap-4 md:gap-0 text-center md:text-left">
             <h1>Fullstack<br />developer<br />from the Netherlands<span className="text-yellow-500">.</span></h1>
-            <p>I'm Justian Spijkerbosch. An 18 year old fullstack developer from the Netherlands,<br />i'm well known with a lot of programming technologies, like Next.JS and NestJS.</p>
+            <p>I'm Justian Spijkerbosch. A fullstack developer from the Netherlands,<br />i'm well known with a lot of programming technologies, like Next.JS and NestJS.</p>
             <div>
               <Link href={"/about"}>
                 <button className="button primary mt-4">
