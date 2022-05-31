@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {FaGraduationCap, FaSchool} from "react-icons/fa";
 
 export default function About() {
     return (
@@ -28,7 +29,7 @@ export default function About() {
                 </div>
             </section>
             {/* who I am section */}
-            <section className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 md:grid-cols-4 pb-16 lg:pb-0 lg:py-16">
+            <section className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 md:grid-cols-4 pb-16 lg:py-16">
                 <div className="col-span-1 hidden md:flex flex-col gap-4">
                     <h2>Who I<br /><span className="text-yellow-500">am.</span></h2>
                     <div className="hidden md:flex">
@@ -50,6 +51,59 @@ export default function About() {
                     <h3 className="mt-4">Programming</h3>
                     <p>I have been programming for about seven years now. The first few years were filled with making very simple sites with HTML, CSS and Javascript. But since a number of years, I have really taken up programming actively: A few years back, I started learning NodeJS and PHP and thus also learned to develop backend applications. At the moment, I have gained knowledge of programming languages such as PHP, Javascript and Python. And I can find my way in a lot of frontend frameworks like React, Svelte and Vue.JS.</p>
                     <p className="mt-2">What I like most is designing websites/webshops/webapps in a tool such as figma and then later realising this in a javascript library such as React using a CSS framework such as tailwind. To make it even more fun, I also like to build an API behind this to have the entire full stack experience built by myself.</p>
+                </div>
+            </section>
+            {/* education section */}
+            <section className="bg-blue-50 py-16">
+                <div className="max-w-7xl mx-auto px-4 xl:px-0 grid md:grid-cols-3 gap-8">
+                    <div className="col-span-1 flex flex-col gap-1">
+                        <h2>Education</h2>
+                        <p>My complete education walktrough.</p>
+                    </div>
+                    <div className="col-span-2 flex flex-col gap-8">
+                        <div className="bg-white rounded-lg p-8 flex flex-row gap-8">
+                            <div className="text-yellow-500 text-4xl">
+                                <FaSchool />
+                            </div>
+                            <div className="w-full">
+                                <div className="flex flex-row items-center justify-between">
+                                    <h3>Hogeschool Utrecht</h3>
+                                    <span><span className="font-medium">Aug. 2021</span> - now</span>
+                                </div>
+                                <p>I'm currently studying Computer Science at the Hogeschool Utrecht in Utrecht, the Netherlands. If everything goes well I will get my bachelor in Computer Science at the middle of 2024.</p>
+                                <p className="mt-2">At the Hogeschool of Utrecht, I am doing a study called OPEN-ICT. What this basically means is that I have 4 different periods per year where I work with a fixed group on a project per period. For the rest everything is relatively free: for example, I can choose what programming language I want to use and what user stories I want to tackle.</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg p-8 flex flex-row gap-8">
+                            <div className="text-yellow-500 text-4xl">
+                                <FaGraduationCap />
+                            </div>
+                            <div className="w-full">
+                                <div className="flex flex-row items-center justify-between">
+                                    <h3>Veluws College Walterbosch</h3>
+                                    <span className="font-medium">Aug. 2015 - July 2021</span>
+                                </div>
+                                <p>Veluws College Walterbosch was my secondary school. This was the place where I was introduced to programming and where I spent most of my currently memorable life. In six years time, I graduated with honours from the Higher General Secondary Education (HAVO). With a curriculum focused on the beta subjects (physics, chemistry and mathematics).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* skills */}
+            <section className="max-w-7xl mx-auto px-4 xl:px-0 flex items-center flex-col gap-8 p-16">
+                <div className="flex flex-col gap-1 text-center">
+                    <h2>Skills</h2>
+                    <p>A short overview of the programming languages/frameworks or tools I have knowledge of.</p>
+                </div>
+                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-16 items-center">
+                    <img src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel"/>
+                    <img src="https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png" alt="nodejs" />
+                    <img src="https://docs.nestjs.com/assets/logo-small.svg" alt="nestjs" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png" alt="nextjs" />
+                    <img src="https://cdn2.downdetector.com/static/uploads/logo/figma2.png" alt="figma" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="php" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="react" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="vue" />
                 </div>
             </section>
         </>
