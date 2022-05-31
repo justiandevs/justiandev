@@ -27,9 +27,9 @@ export default function Home() {
         </div>
         {/* intro section */}
         <div className="bg-blue-50 my-16 max-w-full">
-          <div className="max-w-7xl mx-auto px-4 xl:px-0 flex flex-col py-16 lg:py-0 lg:flex-row justify-between items-center gap-8 lg:gap-32 lg:h-96 lg:mt-80 xl:mt-64 lg:mb-72 xl:mb-48">
+          <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-2 xl:grid-cols-4 grid gap-8 xl:gap-32 xl:h-96 xl:mt-64 pb-16 xl:mb-48">
             {/* left content */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 col-span-2 pt-16 xl:pb-16">
               <div className="flex flex-col gap-1">
                 <h2>Who <br /><span className="text-yellow-500">I am.</span></h2>
                 <p>I am Justian. A full-stack developer whose great passion lies in programming front-end projects. Nevertheless, I am also very interested in programming backend projects. Besides programming, I study computer science in Utrecht (the Netherlands) and I play handball in Apeldoorn at AHV Achilles.</p>
@@ -43,8 +43,8 @@ export default function Home() {
               </div>
             </div>
             {/* right content */}
-            <div>
-              <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="col-span-2 xl:-mt-28">
+              <div className="flex grid grid-cols-1 xl:grid-cols-2 items-center gap-8">
                 <div className="rounded-lg bg-white p-8 flex flex-col gap">
                   <FaServer className="text-green-600 text-4xl mb-4" />
                   <h3>Webdesign</h3>
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         {/* projects */}
-        <div className="max-w-7xl mx-auto px-4 xl:px-0 pt-0 xl:pt-16 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 xl:px-0 xl:pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* solo project
           TODO: MAP OVER ALL PROJECTS USING FRONTMATTER */}
           <div className="grid-col-1 flex flex-col gap">
