@@ -1,6 +1,8 @@
 import Link from "next/link";
 import {FaBaseballBall, FaCode, FaMale, FaServer} from "react-icons/fa";
 import {Seo} from "../components/seo/Seo";
+import Projects from "./projects";
+import {ProjectsContainer} from "../components/projects/ProjectsContainer";
 
 export default function Home() {
   return (
@@ -70,8 +72,7 @@ export default function Home() {
         </div>
         {/* projects */}
         <div className="max-w-7xl mx-auto px-4 xl:px-0 xl:pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* solo project
-          TODO: MAP OVER ALL PROJECTS USING FRONTMATTER */}
+          {/* solo project */}
           <div className="col-span-1 lg:order-last flex flex-col gap">
             <h2>Projects</h2>
             <p>This is a short overview of the last three projects I worked on.</p>
@@ -83,38 +84,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="col-span-1 rounded-lg" style={{backgroundImage: "url(https://media-cdn.tripadvisor.com/media/photo-p/14/06/a3/3d/photo0jpg.jpg)", backgroundSize: 'cover'}}>
-            <div className="p-8 bg-gray-900 rounded-lg custom-opacity-background">
-              <h3 className="text-white">Starbucks</h3>
-              <p className="text-white">Project for starbucks. I created their API. Created this project using NextJS and NestJS. And did it with someone else.</p>
-              <p className="text-white pt-4">
-                <Link href={"/projects/slug"}>
-                  Read more
-                </Link>
-              </p>
-            </div>
-          </div>
-          <div className="col-span-1 rounded-lg" style={{backgroundImage: "url(https://media-cdn.tripadvisor.com/media/photo-p/14/06/a3/3d/photo0jpg.jpg)", backgroundSize: 'cover'}}>
-            <div className="p-8 rounded-lg custom-opacity-background">
-              <h3 className="text-white">Starbucks</h3>
-              <p className="text-white">Project for starbucks. I created their API. Created this project using NextJS and NestJS. And did it with someone else.</p>
-              <p className="text-white pt-4">
-                <Link href={"/projects/slug"}>
-                  Read more
-                </Link>
-              </p>
-            </div>
-          </div>
-          <div className="col-span-1 rounded-lg" style={{backgroundImage: "url(https://media-cdn.tripadvisor.com/media/photo-p/14/06/a3/3d/photo0jpg.jpg)", backgroundSize: 'cover'}}>
-            <div className="p-8 bg-gray-900 rounded-lg custom-opacity-background">
-              <h3 className="text-white">Starbucks</h3>
-              <p className="text-white">Project for starbucks. I created their API. Created this project using NextJS and NestJS. And did it with someone else.</p>
-              <p className="text-white pt-4">
-                <Link href={"/projects/slug"}>
-                  Read more
-                </Link>
-              </p>
-            </div>
+          <div className="col-span-3">
+            <ProjectsContainer />
           </div>
         </div>
       </>
