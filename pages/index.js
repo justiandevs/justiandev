@@ -7,7 +7,7 @@ export default function Home() {
         {/* hero section */}
         <div className="flex max-w-7xl mx-auto px-4 xl:px-0 flex-col-reverse gap-8 items-center justify-center md:flex-row justify-center md:justify-between items-center pt-8">
           {/* first part */}
-          <div className="flex flex-col text-center md:text-left">
+          <div className="flex flex-col gap-4 md:gap-0 text-center md:text-left">
             <h1>Fullstack<br />developer<br />from the Netherlands<span className="text-yellow-500">.</span></h1>
             <p>I'm Justian Spijkerbosch. An 18 year old fullstack developer from the Netherlands,<br />i'm well known with a lot of programming technologies, like Next.JS and NestJS.</p>
             <div>
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         {/* projects */}
-        <div className="max-w-7xl mx-auto px-4 xl:px-0 pt-16 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 xl:px-0 pt-0 xl:pt-16 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* solo project
           TODO: MAP OVER ALL PROJECTS USING FRONTMATTER */}
           <div className="grid-col-1 flex flex-col gap">
