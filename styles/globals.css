@@ -53,3 +53,7 @@ h3 {
     transition: background 0.2s ease,
                 padding 0.1s linear;
 }
+
+.custom-opacity-background {
+    background: rgba(17, 24, 39, 0.65);
+}
