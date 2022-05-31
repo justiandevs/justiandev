@@ -1,9 +1,11 @@
 import Link from "next/link";
 import {FaGraduationCap, FaSchool} from "react-icons/fa";
+import {Seo} from "../components/seo/Seo";
 
 export default function About() {
     return (
         <>
+            <Seo title={"About"} description={"Hey, I'm Justian Spijkerbosch. A fullstack developer with his specialization in frontend development from the Netherlands."} />
             {/* hero */}
             <section className="max-w-7xl mx-auto px-4 xl:px-0 flex justify-center text-center py-16">
                 <h1>Developer of <br />the future<span className="text-yellow-500">.</span></h1>

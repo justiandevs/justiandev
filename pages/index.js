@@ -1,9 +1,11 @@
 import Link from "next/link";
 import {FaBaseballBall, FaCode, FaMale, FaServer} from "react-icons/fa";
+import {Seo} from "../components/seo/Seo";
 
 export default function Home() {
   return (
       <>
+        <Seo title={"Home"} description={"Hey, I'm Justian Spijkerbosch. A fullstack developer with his specialization in frontend development from the Netherlands."} />
         {/* hero section */}
         <div className="flex max-w-7xl mx-auto px-4 xl:px-0 flex-col-reverse gap-8 items-center justify-center md:flex-row justify-center md:justify-between items-center pt-8">
           {/* first part */}
