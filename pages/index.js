@@ -26,7 +26,7 @@ export default function Home() {
           <div className="relative flex items-center md:items-end justify-center md:justify-end mr-4">
             <div className="hidden md:flex bg-blue-900 absolute right-0 top-0 w-1/2 md:w-3/5 bottom-0 transform rotate-3 rounded-lg"></div>
             <div className="hidden md:flex bg-yellow-500 absolute right-0 top-0 w-1/2 md:w-3/5 bottom-0 transform -rotate-3 rounded-lg"></div>
-            <img className="rounded-lg w-3/5 z-10" src={"https://i.ibb.co/WyMq9c1/IMG-20210130-132723.jpg"} />
+            <img className="rounded-lg w-3/5 z-10" src={"images/front.jpg"} alt={"Picture of myself, Justian Spijkerbosch"} />
           </div>
         </div>
         {/* intro section */}

@@ -39,7 +39,7 @@ export default function Contact() {
                                     <p>Twitter</p>
                                 </a>
                                 <a href="https://www.linkedin.com/in/justian-spijkerbosch-a4b74118b/" className="group flex flex-row gap-2 items-center">
-                                    <div className="rounded-full bg-blue-50 p-2 transition duration-200 group-hover:bg-blue-900 group-hover:text-white">
+                                    <div className="rounded-full bg-blue-50 p-2 transition duration-200 group-focus:bg-blue-900 group-focus:text-white group-active:bg-blue-900 group-active:text-white group-hover:bg-blue-900 group-hover:text-white ">
                                         <FaLinkedin />
                                     </div>
                                     <p>Linkedin</p>

@@ -12,21 +12,21 @@ export default function About() {
             </section>
             {/* images */}
             <section className="lg:grid-cols-3 xl:grid-cols-[1fr_1280px_1fr] gap-8 hidden lg:grid">
-                <div className="col-span-1 hidden xl:flex rounded-r-lg transform scale-y-90" style={{backgroundImage: "url(https://i.ibb.co/SR1hx8y/pexels-josh-meeder-1472386-1.jpg)", backgroundSize: "cover"}}>
+                <div className="col-span-1 hidden xl:flex rounded-r-lg transform scale-y-90" style={{backgroundImage: "url(images/deer.jpg)", backgroundSize: "cover"}}>
                     <div className="w-full h-full rounded-r-lg custom-opacity-background-light"></div>
                 </div>
                 <div className="lg:col-span-3 xl:col-span-1 grid grid-cols-3 gap-8">
-                    <div className="col-span-1 lg:rounded-r-lg xl:rounded-lg h-96" style={{backgroundImage: "url(https://i.ibb.co/qyZSg3Q/IMG-20210202-163422-736.jpg)", backgroundSize: "cover"}}>
+                    <div className="col-span-1 lg:rounded-r-lg xl:rounded-lg h-96" style={{backgroundImage: "url(images/standing.jpg)", backgroundSize: "cover"}}>
                         <div className="w-full h-full lg:rounded-r-lg xl:rounded-lg custom-opacity-background-light"></div>
                     </div>
-                    <div className="col-span-1 rounded-lg" style={{backgroundImage: "url(https://i.ibb.co/xHBNWv7/IMG-20210123-085851-641.jpg)", backgroundSize: "cover"}}>
+                    <div className="col-span-1 rounded-lg" style={{backgroundImage: "url(images/selfie.jpg)", backgroundSize: "cover"}}>
                         <div className="w-full h-full rounded-lg custom-opacity-background-light"></div>
                     </div>
-                    <div className="col-span-1 lg:rounded-l-lg xl:rounded-lg" style={{backgroundImage: "url(https://i.ibb.co/zfkYr7s/IMG-20210130-132723.jpg)", backgroundSize: "cover"}}>
+                    <div className="col-span-1 lg:rounded-l-lg xl:rounded-lg" style={{backgroundImage: "url(images/front_otherside.jpg)", backgroundSize: "cover"}}>
                         <div className="w-full h-full lg:rounded-l-lg xl:rounded-lg custom-opacity-background-light"></div>
                     </div>
                 </div>
-                <div className="col-span-1 hidden xl:flex rounded-l-lg transform scale-y-90" style={{backgroundImage: "url(https://i.ibb.co/JnyKc8q/pexels-s-migaj-747964.jpg)", backgroundSize: "cover"}}>
+                <div className="col-span-1 hidden xl:flex rounded-l-lg transform scale-y-90" style={{backgroundImage: "url(images/mountains.jpg)", backgroundSize: "cover"}}>
                     <div className="w-full h-full rounded-l-lg custom-opacity-background-light"></div>
                 </div>
             </section>
@@ -98,14 +98,14 @@ export default function About() {
                     <p>A short overview of the programming languages/frameworks or tools I have knowledge of.</p>
                 </div>
                 <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-16 items-center">
-                    <img src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel"/>
-                    <img src="https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png" alt="nodejs" />
-                    <img src="https://docs.nestjs.com/assets/logo-small.svg" alt="nestjs" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png" alt="nextjs" />
-                    <img src="https://cdn2.downdetector.com/static/uploads/logo/figma2.png" alt="figma" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="php" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="react" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="vue" />
+                    <img src="images/laravel.png" alt="laravel"/>
+                    <img src="images/nodejs_logo.png" alt="nodejs" />
+                    <img src="images/logo-small.svg" alt="nestjs" />
+                    <img src="images/nextjs.png" alt="nextjs" />
+                    <img src="images/figma2.png" alt="figma" />
+                    <img src="images/PHP-logo.svg.png" alt="php" />
+                    <img src="images/react.png" alt="react" />
+                    <img src="images/vue.png" alt="vue" />
                 </div>
             </section>
         </>
