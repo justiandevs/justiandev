@@ -1,10 +1,11 @@
 import {Seo} from "../../components/seo/Seo";
 
 export default function Slug() {
+    const description = "description";
+
     return (
         <>
-            {/* TODO: add right project name */}
-            <Seo title={"Specific Project"} description={`projectnaam`} />
+            <Seo title={"Specific Project"} description={description} />
         </>
     )
 }

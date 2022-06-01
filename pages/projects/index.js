@@ -1,5 +1,4 @@
 import {Seo} from "../../components/seo/Seo";
-import {FaGithub, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 import {ProjectsContainer} from "../../components/projects/ProjectsContainer";
 
 export default function Projects() {

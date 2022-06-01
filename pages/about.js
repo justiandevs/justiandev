@@ -32,16 +32,9 @@ export default function About() {
             </section>
             {/* who I am section */}
             <section className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 md:grid-cols-4 pb-16 lg:py-16">
-                <div className="col-span-1 hidden md:flex flex-col gap-4">
+                <div className="col-span-1 hidden md:flex flex-col gap-1">
                     <h2>Who I<br /><span className="text-yellow-500">am.</span></h2>
-                    <div className="hidden md:flex">
-                        {/* TODO: Link to CV */}
-                        <a href={"/cv.pdf"}>
-                            <button className="button primary">
-                                Download my cv
-                            </button>
-                        </a>
-                    </div>
+                    <p>Read here who I am.</p>
                 </div>
                 <div className="col-span-3">
                     <h3>I'm Justian</h3>
