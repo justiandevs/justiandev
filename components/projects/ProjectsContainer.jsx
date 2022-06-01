@@ -1,9 +1,9 @@
 import {ProjectsView} from "./ProjectsView";
 
-export function ProjectsContainer() {
+export function ProjectsContainer({ projects }) {
     return (
         <div>
-            <ProjectsView />
+            <ProjectsView projects={projects} />
         </div>
     )
 }

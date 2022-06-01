@@ -1,10 +1,13 @@
 import Link from "next/link";
 import {FaBaseballBall, FaCode, FaMale, FaServer} from "react-icons/fa";
 import {Seo} from "../components/seo/Seo";
-import Projects from "./projects";
 import {ProjectsContainer} from "../components/projects/ProjectsContainer";
+import fs from "fs";
+import matter from "gray-matter";
 
-export default function Home() {
+export default function Home({ posts }) {
+  const projects = posts.slice(0, 3);
+
   return (
       <>
         <Seo title={"Home"} description={"Hey, I'm Justian Spijkerbosch. A fullstack developer with his specialization in frontend development from the Netherlands."} />
@@ -85,9 +88,30 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-3">
-            <ProjectsContainer />
+            <ProjectsContainer projects={projects} />
           </div>
         </div>
       </>
   )
+}
+
+export async function getStaticProps() {
+  const files = fs.readdirSync('projects');
+
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace('.md', '');
+    const readFile = fs.readFileSync(`projects/${fileName}`);
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter
+    }
+  });
+
+  return {
+    props: {
+      posts
+    }
+  }
 }
