@@ -8,7 +8,7 @@ export function LayoutView({ children, height }) {
             {/* navigation */}
             <Navigation />
             {/* main content */}
-            <section className="" style={{paddingTop: height}}>
+            <section className="pt-44 md:pt-32">
                 <div className={"pb-16"}>
                     {children}
                 </div>

@@ -15,7 +15,7 @@ export default function Slug({ frontmatter, content }) {
             <header className="bg-blue-50 h-48"></header>
             {/* box */}
             <section className="max-w-7xl mx-auto px-4 xl:px-0 mx-4 xl:mx-auto bg-white rounded-lg bg-white -mt-24">
-                <div className="md:p-12 p-8">
+                <div className="p-12">
                     <div className="flex flex-col gap-1">
                         <div className="flex gap-2 flex-row items-center justify-between">
                             <h1>{frontmatter.title}<span className="text-yellow-500">.</span></h1>
@@ -34,7 +34,7 @@ export default function Slug({ frontmatter, content }) {
                     </div>
                     <div className="py-4">
                         <h3>Techniques I used</h3>
-                        <div className="flex flex-row gap-2 mt-2">
+                        <div className="flex flex-col md:flex-row gap-2 mt-2">
                             {frontmatter.tags.map((tag) => {
                                 return (
                                     <div key={tag} className="px-3 py-2 bg-yellow-500 rounded-lg">
