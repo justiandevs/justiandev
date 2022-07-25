@@ -7,7 +7,7 @@ export function ProjectsView({ projects }) {
                 return (
                     <Link href={`/projects/${project.slug}`} key={project.frontmatter.title}>
                         <div className="col-span-1 rounded-lg cursor-pointer group" style={{backgroundImage: `url(${project.frontmatter.image})`, backgroundSize: 'cover'}}>
-                            <div className="p-8 transition duration-200 group-hover:bg-blue-900 bg-gray-900 rounded-lg custom-opacity-background">
+                            <div className="p-8 transition duration-200 group-hover:bg-blue-900 bg-gray-900 h-full rounded-lg custom-opacity-background">
                                 <h3 className="text-white">{project.frontmatter.title}</h3>
                                 <p className="text-white">{project.frontmatter.description}</p>
                                 <p className="text-white pt-4 transition duration-200 group-hover:text-yellow-400">
